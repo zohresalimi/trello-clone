@@ -5,48 +5,48 @@ export default {
   columns: [
     {
       name: "todo",
-      task: [
+      tasks: [
         {
           description: "",
-          name: "first task",
+          name: "first tasks",
           id: uuid(),
-          userAssined: null
+          userAssined: null,
         },
         {
           description: "",
           name: "second task",
           id: uuid(),
-          userAssined: null
+          userAssined: null,
         },
         {
           description: "",
           name: "third task",
           id: uuid(),
-          userAssined: null
-        }
-      ]
+          userAssined: null,
+        },
+      ],
     },
     {
       name: "in-progress",
-      task: [
+      tasks: [
         {
           description: "",
           name: "first task",
           id: uuid(),
-          userAssined: null
-        }
-      ]
+          userAssined: null,
+        },
+      ],
     },
     {
       name: "done",
-      task: [
+      tasks: [
         {
           description: "",
           name: "first task",
           id: uuid(),
-          userAssined: null
-        }
-      ]
-    }
-  ]
+          userAssined: null,
+        },
+      ],
+    },
+  ],
 };

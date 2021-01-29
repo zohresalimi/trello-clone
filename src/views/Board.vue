@@ -1,6 +1,17 @@
 <template>
   <div class="board">
-    {{ board }}
+    <div class="flex flex-row item-start">
+      <div class="column" v-for="column of board.columns" :key="column.name">
+        <div class="flex items-center mb-2 font-bold">
+          {{ column.name }}
+        </div>
+        <div class="list-reset">
+          <div class="task" v-for="task of column.tasks" :key="task.id">
+            {{ task }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -15,8 +26,10 @@ export default {
   @apply p-4 bg-green-200 h-full overflow-auto;
 }
 
-.task-bg {
-  @apply bg-blue-500 absolute;
-  background: rgba(0, 0, 0, 0.5);
+.column {
+  @apply bg-gray-300 p-2 mr-4 text-left shadow rounded;
+}
+.task{
+  @apply flex items-center flex-wrap shadow mb-2 py-2 px-2 rounded bg-white text-gray-900 no-underline
 }
 </style>

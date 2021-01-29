@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   purge: {
     mode: "layers",
-    content: ["./public/**/*.html", "./src/**/*.vue"],
+    content: ["./public/**/*.html", "./src/**/*.vue"]
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -21,12 +21,12 @@ module.exports = {
         indigo: colors.indigo,
         purple: colors.violet,
         pink: colors.pink,
-        teal: colors.teal,
-      },
-    },
+        teal: colors.teal
+      }
+    }
   },
   variants: {},
-  plugins: [],
+  plugins: []
 };
 
 // module.exports = {
