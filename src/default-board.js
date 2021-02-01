@@ -10,21 +10,21 @@ export default {
           description: "",
           name: "first tasks",
           id: uuid(),
-          userAssined: null,
+          userAssined: null
         },
         {
           description: "",
           name: "second task",
           id: uuid(),
-          userAssined: null,
+          userAssined: null
         },
         {
           description: "",
           name: "third task",
           id: uuid(),
-          userAssined: null,
-        },
-      ],
+          userAssined: null
+        }
+      ]
     },
     {
       name: "in-progress",
@@ -33,9 +33,9 @@ export default {
           description: "",
           name: "first task",
           id: uuid(),
-          userAssined: null,
-        },
-      ],
+          userAssined: null
+        }
+      ]
     },
     {
       name: "done",
@@ -44,9 +44,9 @@ export default {
           description: "",
           name: "first task",
           id: uuid(),
-          userAssined: null,
-        },
-      ],
-    },
-  ],
+          userAssined: null
+        }
+      ]
+    }
+  ]
 };
